@@ -1,0 +1,58 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(#f7c948,#e6a425);
+    font-family:Arial;
+}
+
+/* card */
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    width:260px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* emoji */
+.emoji{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+/* stars */
+.stars{
+    direction:rtl;
+    display:flex;
+    justify-content:center;
+    gap:5px;
+}
+
+.stars input{
+    display:none;
+}
+
+.stars label{
+    font-size:30px;
+    color:#ccc;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* hover + select */
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input:checked ~ label{
+    color:gold;
+}
+
+/* text */
+.text{
+    margin-top:15px;
+    font-size:14px;
+    color:#555;
+}
